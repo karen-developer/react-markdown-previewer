@@ -33,7 +33,7 @@ export default class App extends React.Component {
         <Row>
         <Col className="text-white text-center mb-5">
         <h6>
-        ⓒ 2020 by {" "}
+        ⓒ 2020 Made with <i class="far fa-heart"></i> by {" "}
         <a href="https://karen-developer.com" target="_blank">
           <span className="karen">Karen Chang</span>
         </a>
@@ -75,7 +75,7 @@ export default class App extends React.Component {
 
 const placeholder = `## Links
 
-Welcome to [karen-developer.com](https://karen-developer.com)
+Welcome to visit [karen-developer.com](https://karen-developer.com)
 
 ## Images
 
