@@ -24,14 +24,14 @@ export default class App extends React.Component {
     return (
       <div className="App">
           
-      <Container className="mt-5">
+      <Container>
         <Bounce top>
         <Row>
           <Col className="text-center mt-5"><h1 className="title">Markdown Previewer</h1></Col>
         </Row>
 
         <Row>
-        <Col className="text-white text-center mb-5">
+        <Col className="text-white text-center mb-2">
         <h6>
         ⓒ 2020 Made with <i class="far fa-heart"></i> by {" "}
         <a href="https://karen-developer.com" target="_blank">
@@ -44,19 +44,19 @@ export default class App extends React.Component {
 
         <Bounce bottom>     
         <Row>
-          <Col className="text-center m-2">
+          <Col className="text-center mb-2">
            <Form.Group controlId="exampleForm.ControlTextarea1">
            <Form.Label><h4 className="title">Input</h4></Form.Label>
            <Form.Control 
              as="textarea" 
-             rows={20} 
+             rows={19} 
              value={this.state.markdown}
              onChange={(e) => 
              {this.updateMarkdown(e.target.value);}}/>
            </Form.Group>
           </Col>
 
-           <Col className="text-center m-2">
+           <Col className="text-center mb-2">
            <h4 className="title mb-3">Output</h4>
            <div className="text-left output-style"               
                 dangerouslySetInnerHTML={{
@@ -73,16 +73,13 @@ export default class App extends React.Component {
   }
 }
 
-const placeholder = `## Links
-
+const placeholder = `### Links
 Welcome to visit [karen-developer.com](https://karen-developer.com)
 
-## Images
-
+### Images
 ![freeCodeCamp Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/FreeCodeCamp_logo.png/375px-FreeCodeCamp_logo.png)
 
-## Code
-
+### Code
     // Developer Comments
     Eat
     Code
